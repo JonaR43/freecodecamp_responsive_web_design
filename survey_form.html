@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<hmtl lang="us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel ="stylesheet" href="survey_form.css">
+  </head>
+  <body>
+    <h1 id="title">Tennis survey form</h1>
+    <p id="description">Hello this is the inquiry form for the 2024 season, please fill out all the required boxes with your information</p>
+    <form action="" id="survey-form">
+      <div class ="form-div">
+        <label id="name-label">Name</label>
+        <input type="text" id ="name" name="Name"required placeholder="Enter name here"></input>
+        </div>
+      <div class = "form-div">
+        <label id="email-label">Email</label>
+        <input type="email" id ="email" name="Email" required placeholder="Enter email here"></input>
+        </div>
+      <div class ="form-div">
+        <label id="number-label">Age</label>
+        <input type="number" id ="number" name ="Age" required min="0" max="100" placeholder="Enter age here"></input>
+        </div>
+        <div class = "form-div">
+          <label id="dropdown-label">What is your current skill level?</label>
+          <select id="dropdown" name="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4">Pro</option>
+          </select>
+          </div>
+        <div class = "form-div">
+          <label id="experience">Have you played tournaments?</label>
+          </div>
+          <div class="form-radio">
+          <label id="radio-label"><input type="radio" id="radio" value="yes" name="beginner">Yes</input></label>
+          </div>
+          <div class="form-radio">
+          <label id="radio-label"><input type="radio" id="radio" value="no" name="beginner">No</input></label>
+          </div>
+        <div class ="form-div">
+          <label for="checkbox">Do you have tennis equipment?</label>
+        </div>
+        <div class="form-check">
+        <label id="checkbox-label"><input type="checkbox" id="checkbox" value="Yes" name="equipment" checked>Yes</input></label>
+        </div>
+        <div class="form-check">
+          <label id="checkbox-label"><input type="checkbox"id="checkbox" value="no" name="equipment">No</input></label>
+        </div>
+      <div class="form-div">
+        <label id="label-text">Any information you would like to share?</label>
+        <textarea placeholder="Enter Additional information here" name ="information"></textarea></label>
+      </div>
+      <div class="form-div">
+        <input type="submit" id="submit"></input>
+      </div>
+    </form>
+  </body>
+</html>
